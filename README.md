@@ -1,12 +1,8 @@
 # Introduction
 📊 Dive into the data job market! Focusing on data scientist roles, this project explores 💰  top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data field.
 
-🔍 SQL queries? Check them out here: [project_sql folder](/project_sql/)
-
 # Background
 Driven by a quest to navigate the data scientist job market more effectively, this project was born from a desire to pinpoint top-paid and in-demand skills, streamlining others work to find optimal jobs.
-
-Data hails from my [SQL Course](https://lukebarousse.com/sql). It's packed with insights on job titles, salaries, locations, and essential skills.
 
 ### The questions I wanted to answer through my SQL queries were:
 
@@ -39,7 +35,7 @@ where job_title_short = 'Data Scientist'
 order by salary_year_avg DESC
 limit 10;
 ```
-Here's the breakdown of the top data analyst jobs in 2023:
+Here's the breakdown of the top data scientist jobs in 2023:
 - **High Salary Range::** The average salary for these roles ranges from $240,000 to $340,000, indicating a lucrative market for data science professionals.
 - **Leadership Positions:** Many roles listed (e.g., Head of Data Science, Director of Data Science) imply a focus on leadership and strategic decision-making, highlighting the importance of managerial skills in addition to technical expertise.
 - **Full-Time Opportunities:** All positions are full-time, suggesting a stable demand for dedicated professionals in data science.
@@ -91,7 +87,7 @@ GROUP by skills_dim.skills
 order by demand_count DESC
 limit 5;
 ```
-Here's the breakdown of the most demanded skills for data analysts in 2023
+Here's the breakdown of the most demanded skills for data scientist in 2023
 Python and SQL lead in demand, followed by SAS, R, and Tableau, highlighting the key technical skills essential for data science roles.
 
 
@@ -103,7 +99,7 @@ Python and SQL lead in demand, followed by SAS, R, and Tableau, highlighting the
 | R        | 675          |
 |Tableau   | 367          |
 
-*Table of the demand for the top 5 skills in data analyst job postings*
+*Table of the demand for the top 5 skills in data scientist job postings*
 
 ### 4. Skills Based on Salary and Most Optimal Skills to Learn
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
@@ -120,8 +116,8 @@ GROUP by skills_dim.skills
 HAVING COUNT(job_postings_fact.job_id) > 10
 order by AVG_Salary_per_Skill DESC, job_demand DESC;
 ```
-Here's a breakdown of the results for top paying skills for Data Analysts:
-- **High Demand for Big Data & ML Skills:** Top salaries are commanded by analysts skilled in big data technologies (PySpark, Couchbase), machine learning tools (DataRobot, Jupyter), and Python libraries (Pandas, NumPy), reflecting the industry's high valuation of data processing and predictive modeling capabilities.
+Here's a breakdown of the results for top paying skills for Data scientists:
+- **High Demand for Big Data & ML Skills:** Top salaries are commanded by scientists skilled in big data technologies (PySpark, Couchbase), machine learning tools (DataRobot, Jupyter), and Python libraries (Pandas, NumPy), reflecting the industry's high valuation of data processing and predictive modeling capabilities.
 - **Software Development & Deployment Proficiency:** Knowledge in development and deployment tools (GitLab, Kubernetes, Airflow) indicates a lucrative crossover between data analysis and engineering, with a premium on skills that facilitate automation and efficient data pipeline management.
 - **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
 
